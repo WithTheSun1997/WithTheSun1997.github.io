@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册</title>
+		<link rel="icon" sizes="64x64" href="images/link-volunteer.png" >
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="style/register.css"/>
+		<link rel="stylesheet" type="text/css" href="style/rl.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="header-yi">
+					<div class="header-logo"><a href="login.html"><img src="images/LOGO1.png" ></a></div>
+					<p class="header-text">欢迎登录</p>
+				</div>
+				<div class="header-er">
+					已有账号？请
+					<a href="login.html">登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="container">
+				<div class="body-input">
+					<span>用户名：</span>
+					<input type="text" class="name" placeholder="请输入你的用户名...">
+				</div>
+				<div class="body-input body-input-bg">
+					<span>设置密码：</span>
+					<input type="password" class="password" placeholder="请输入你的用户名...">
+				</div>
+				<div class="body-input">
+					<span>性别：</span>
+					<input type="text" class="sex" placeholder="请输入你的性别...">
+				</div>
+				<div class="body-input">
+					<span>年龄：</span>
+					<input type="number" class="age" placeholder="请输入你的年龄...">
+				</div>
+				<div class="body-input">
+					<span>二级学院：</span>
+					<input type="input" class="qianming" placeholder="请输入所在二级学院...">
+				</div>
+				<div class="body-input">
+					<span>头像：</span>
+					<input type="file" class="toxiang">
+				</div>
+				<div class="body-btn">
+					<button class="btn">确认</button>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.btn').click(function(){
+					let name = $('.name').val();
+					let password = $('.password').val();
+					let sex = $('.sex').val();
+					let age = $('.age').val();
+					let qianming = $('.qianming').val();
+					if(name != '' && password != '' && sex !='' && age != '' && qianming !=''){
+						var formData = new FormData();
+						formData.append("photo", $(".toxiang")[0].files[0]);
+						formData.append("service", 'App.Passion.UploadFile');
+						formData.append("token", "123");
+						formData.append("name", name);
+						formData.append("password", password);
+						formData.append("sex", sex);
+						formData.append("age", age);
+						formData.append("qianming", qianming);
+						$.ajax({
+						    url: 'http://localhost:50342/api/Users/zc',
+						    type: 'post',
+						    data: formData,
+						    contentType: false,
+						    processData: false,
+						    success: function (dt) {
+						        if(dt != false){
+						        	alert('注册成功！')
+						        	sessionStorage.setItem("zcuser", JSON.stringify(dt))
+						        	location.href='login.html';
+						        }else{
+						        	alert('昵称已被别人使用！');
+						        }
+						    }
+						})
+					}else{
+						alert('文本框不能为空！');
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

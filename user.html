@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="style/user.css"/>
+		<link rel="stylesheet" type="text/css" href="style/rl.css"/>
+	</head>
+	<body>
+		<div id="tab" class="calendar" style="position: fixed;z-index: 999999999;top: 20%;">
+			<ul>
+				<li class="active">
+					<h2>1</h2>
+					<p>一月</p>
+				</li>
+				<li>
+					<h2>2</h2>
+					<p>二月</p>
+				</li>
+				<li>
+					<h2>3</h2>
+					<p>三月</p>
+				</li>
+				<li>
+					<h2>4</h2>
+					<p>四月</p>
+				</li>
+				<li>
+					<h2>5</h2>
+					<p>五月</p>
+				</li>
+				<li>
+					<h2>6</h2>
+					<p>六月</p>
+				</li>
+				<li>
+					<h2>7</h2>
+					<p>七月</p>
+				</li>
+				<li>
+					<h2>8</h2>
+					<p>八月</p>
+				</li>
+				<li>
+					<h2>9</h2>
+					<p>九月</p>
+				</li>
+				<li>
+					<h2>10</h2>
+					<p>十月</p>
+				</li>
+				<li>
+					<h2>11</h2>
+					<p>十一月</p>
+				</li>
+				<li>
+					<h2>12</h2>
+					<p>十二月</p>
+				</li>
+			</ul>
+			<div class="text">
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				var arr = [
+					'快过年了，大家一起去放鞭炮咯！',
+					'马上上学了，不开心！',
+					'妇女节快乐！',
+					'很平淡的四月',
+					'劳动光荣！',
+					'儿童节快乐！',
+					'好热的七月!',
+					'八一建军节!',
+					'又开学了哎！'
+				];
+				var oDiv = document.getElementById('tab');
+				var oLi = oDiv.getElementsByTagName('li');
+				var oTxt = oDiv.getElementsByTagName('div')[0];
+				var i = 0;
+				for (var i = 0; i < oLi.length; i++) {
+					oLi[i].index = i;
+					oLi[i].onmouseover = function() {
+						for (var i = 0; i < oLi.length; i++) {
+		
+							oLi[i].className = '';
+		
+						}
+		
+						this.className = 'active';
+						oTxt.innerHTML = '<h2>' + (this.index + 1) + '月活动</h2><p>' + arr[this.index] + '</p>';
+					};
+		
+				}
+		
+			};
+		</script>
+		<div class="header">
+			<div class="container">
+				<div class="header-yi">
+					<div class="header-logo"><a href="#"><img src="images/logo2%20(1).png" ></a></div>
+					<a href="index.html" class="header-logo-fanhui">返回首页</a>
+				</div>
+				<div class="header-er">
+					xxxxxxx
+					<a href="#">退出</a>
+					<p>购物车<span>0</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="container">
+				<div class="body-l">
+					<div class="body-l-img"><img src="images/noavatar_small.gif"></div>
+					<ul class="body-l-list">
+						<li>
+							<h1>个人信息</h1>
+							<p>个人资料</p>
+							<p>收货地址</p>
+						</li>
+						<li>
+							<h1>账户安全</h1>
+							<p>修改密码</p>
+							<p>修改邮箱</p>
+						</li>
+						<li>
+							<h1>订单管理</h1>
+							<p>我的订单</p>
+							<p>我的购物车</p>
+						</li>
+					</ul>
+				</div>
+				<div class="body-r">
+					<h1>个人资料</h1>
+					<div class="body-lable">
+						<span><i>*</i>登录名：</span>
+						<div>
+							<span> jinzhentao </span>
+							<i>可用于登录，请牢记哦~</i>
+						</div>
+					</div>
+					<div class="body-input">
+						<span>真实姓名：</span>
+						<div>
+							<input type="text" value="jinzhentao">
+						</div>
+					</div>
+					<div class="body-radio">
+						<span>性别：</span>
+						<label><input type="radio">男</label>
+						<label><input type="radio">女</label>
+						<label><input type="radio">保密</label>
+					</div>
+					<div class="body-select">
+						<span>生日：</span>
+						<div>
+							<span>
+								<select name="" id=""></select>年
+								<select name="" id=""></select>月
+								<select name="" id=""></select>日
+							</span>
+						</div>
+					</div>
+					<div class="body-file">
+						<span>头像：</span>
+						<div>
+							<div class="body-file-img">
+								<span></span>
+							</div>
+							<div class="body-file-text">
+								<span>选择您要上传的头像</span>
+								<em>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</em>
+							</div>
+						</div>
+					</div>
+					<div class="body-btn">
+						<button>保存</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			Copyright © 2019 服企（四川园区） All Rights Reserved
+			<br/>
+			<span>地址：沈阳市铁西区双园路301号</span>
+			<span>邮编：113463</span>
+			<span>咨询电话：</span>
+			<span>团队购票电话：</span>
+			<span>活动策划咨询：024-88034436</span>
+		</div>
+	</body>
+</html>

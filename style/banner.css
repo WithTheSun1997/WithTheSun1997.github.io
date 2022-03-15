@@ -1,0 +1,181 @@
+
+.container {
+	width: 1000px;
+	height: 100%;
+	padding: 100px;
+}
+
+.header {
+	box-sizing: border-box;
+	min-width: 1100px;
+}
+
+.h-top {
+	width: 1300px;
+	margin: auto;
+	height: 80px;
+	color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+}
+
+.header a {
+	color: #333;
+	font-size: 16px;
+}
+
+
+.h-logo,
+.h-logo>a,
+.h-logo img {
+	display: block;
+	height: 60px;
+	width: 250px;
+}
+
+.h-nav {
+	display: flex;
+	height: 100%;
+}
+
+.h-nav>li {
+	height: 100%;
+}
+
+.h-nav a {
+	display: block;
+	line-height: 80px;
+	padding: 0 20px;
+}
+
+.h-nav a:hover {
+	color: red;
+}
+
+
+.h-language>a {
+	margin-right: 10px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.h-language>a:last-of-type {
+	margin: 0;
+}
+
+.nav {
+	padding-top: 12px;
+	padding-bottom: 72px;
+	height: 24px;
+}
+
+.nav a {
+	color: #999;
+	font-size: 16px;
+
+}
+
+.nav span {
+	margin: 0 5px;
+}
+
+.body-title {
+	font-size: 32px;
+	line-height: 40px;
+	text-align: center;
+	padding-bottom: 30px;
+	color: #333;
+	font-weight: bold;
+}
+
+.body-visits {
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 50px;
+	color:white;
+}
+
+.body-visits>span {
+	color: #933C45;
+}
+
+.body-item>p {
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.body-item>a{
+	display: inline-block;
+	width: 400px;
+	margin: 30px;
+
+}
+.body-item img {
+	display: inline-block;
+	width: 100%;
+	
+}
+
+.body-share {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.body-tb {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.body-tb>p {
+	line-height: 30px;
+	font-size: 16px;
+	color: #555;
+}
+
+/*移动*/
+@media screen and (max-width:750px) {
+	.h-top{
+		height: 50px;
+	}
+	.h-nav a{
+		line-height: 50px;
+	}
+	.h-logo{
+		margin-left: 0%;
+	}
+	.h-logo, .h-logo>a, .h-logo img{
+		width: 50px;
+		height: 40px;
+	}
+	.h-nav a{
+		padding: 0 5px;
+		white-space: nowrap;
+	}
+	.h-nav{
+		/* justify-content: space-between; */
+	}
+	.h-language{
+		margin-right: 0;
+		display: none;
+	}
+	.header{
+		min-width: 0;
+		width: 100%;
+	}
+	.h-top{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+	}
+	p{
+		padding: 0 15px;
+	}
+}

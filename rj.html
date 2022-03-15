@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+		<title>活动详情</title>
+		<link rel="icon" sizes="64x64" href="images/link-volunteer.png" >
+		<link rel="stylesheet" type="text/css" href="style/css.css"/>
+	</head>
+	<body>
+		<div class="head">
+			<div class="centerbox">
+				<div class="headfirst">
+					<a href="huodong.html"><img src="images/images/left_arrow.png" alt="加载中" title="返 回" ></a>
+				</div>
+			
+		</div>
+		<style type="text/css">
+			h1 {
+				font-size: 32px;
+				text-align: center;
+				padding-bottom: 10px !important;
+				color: rgb(252, 250, 250);
+				font-weight: 400;
+			}
+
+			.container {
+				display: block !important;
+				width: 50%;
+				padding: 20px 10px;
+				margin: 0 15%;
+				border-radius: 5px;
+				background-color: rgba(255, 255, 255, 0.7);
+			}
+
+			.fwl {
+				text-align: center;
+				font-size: 14px;
+				margin: 20px 0;
+			}
+
+			.fwl>span {
+				color: #933C45;
+			}
+
+			.gn {
+				display: flex;
+				justify-content: flex-end;
+				margin-bottom: 10px;
+			}
+
+			.gn>div {
+				display: flex;
+				align-items: center;
+				color: #933C45;
+			}
+
+			.gn>div>img {
+				width: 22px;
+				display: block;
+				margin: 0;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+
+			.gn>div:first-child {
+				margin-right: 20px;
+			}
+		</style>
+		<div class="body" style="margin-top: 50px;">
+			<div class="container">
+				<h1 class="body-title">活动名称</h1>
+				<div class="fwl">访问量：<span>10000</span></div>
+				<div class="body-item">
+					<p><span style="padding-left:35px;"></span>输入内容</p>
+					<div class="gn">
+						<div><img src="images/images/zan.png"><span>58</span></div>
+						<div><img src="images/images/pinglun.png" ><span>98</span></div>
+					</div>
+					<a href="#"><img src="images/images/user.png"></a>
+				</div>
+			</div>
+		</div>
+		<style>
+			.form{
+				width: 400px;
+				height: 500px;
+				background-color: #fff;
+				position: fixed;
+				left: calc(50% - 200px);
+				top: calc(50% - 250px);
+				border-radius: 5px;
+				box-shadow: 0px 0px 20px 2px #666;
+				overflow: hidden;
+				display: none;
+			}
+			.form-yi{
+				height: 30px;
+				width: 100%;
+				background-color: #0078D7;
+				box-sizing: border-box;
+				padding: 0 5px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			.form-yi>img{
+				width: 30px;
+				height: 30px;
+			}
+			.form-er{
+				width: 100%;
+				display: block;
+				box-sizing: border-box;
+				height: 370px;
+				overflow-y: auto;
+				background-color: #ededed;
+			}
+			.form-er .ni{
+				display: flex;
+				align-items: flex-start;
+				padding: 10px;
+			}
+			.form-er .ni>img{
+				width: 40px;
+				height: 40px;
+				border-radius: 5px;
+				margin-right: 5px;
+			}
+			.form-er .ni .name{
+				font-size: 14px;
+				margin-bottom: 3px;
+			}
+			.form-er .wo>div{
+				text-align: right !important;
+			}
+			.form-er .ni .nr{
+				padding: 5px 10px;
+				border-radius: 5px;
+				background-color: #fff;
+				max-width: 260px;
+				word-break: break-all;
+				display: inline-block;
+			}
+			.form-er .wo{
+				justify-content: flex-end !important;
+			}
+			.form-er .wo>img{
+				margin: 0 !important;
+				margin-left: 5px !important;
+			}
+			.form-er .wo .name{
+				text-align: right !important;
+				color: #0078D7;
+			}
+			.form-san{
+				padding: 10px 17px;
+				display: flex;
+				height: 100px;
+				background-color: #F6F6F6;
+				align-items: center;
+				justify-content: space-between;
+				box-sizing: border-box;
+			}
+			.form-san>input{
+				background-color: #fff;
+				border: none;
+				padding: 0;
+				margin: 0;
+				display: block;
+				height: 40px;
+				border-radius: 5px;
+				width: 300px;
+				box-sizing: border-box;
+				padding-left: 10px;
+			}
+			.form-san>button{
+				height: 50px;
+				width: 50px;
+				border-radius: 100%;
+				border: none;
+				background-color: #0078D7;
+				cursor: pointer;
+			}
+			.form-san>button>img{
+				width: 30px;
+				display: block;
+				margin: auto;
+			}
+		</style>
+		<div class="form">
+			<div class="form-yi"><img src="images/images/guanbis.png" class="guanbi"></div>
+			 <ul class="form-er">
+				<li class="ni">
+					<img src="images/images/user.png" >
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+				</li>
+				<li class="ni">
+					<img src="images/images/user.png" >
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+				</li>
+				<li class="ni">
+					<img src="images/images/user.png" >
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+				</li>
+				<li class="ni">
+					<img src="images/images/user.png" >
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+				</li>
+				<li class="ni">
+					<img src="images/images/user.png" >
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+				</li>
+				<li class="ni">
+					<img src="images/images/user.png" >
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+				</li>
+				<li class="ni wo">
+					<div>
+						<p class="name">donghui</p>
+						<p class="nr">校青年志愿者协会主席</p>
+					</div>
+					<img src="images/images/user.png" >
+				</li>
+			</ul> 
+			<div class="form-san">
+				<input type="text" class="xiaoxi">
+				<button type="button" class="fs"><img src="images/images/fasong.png" ></button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.guanbi').click(function(){
+					$('.form').css('display','none')
+					$('.xiaoxi').val('');
+				})
+				function tanchu(){
+					$('.pl').click(function(){
+						$('.form').css('display','block')
+						$('.form-er').scrollTop($('.form-er').prop('scrollHeight'));
+					});
+				}
+				fxx();
+				function fxx(){
+					$('.fs').click(function(){
+						if (rjid != null && rjid != ''){
+							if(user != '' && user != null){
+								let xiaoxi = $('.xiaoxi').val();
+								if(xiaoxi != ''){
+									$.ajax({
+										url: 'http://localhost:50342/api/pls/addpl',
+										data: {uid:user.id,rid:rjid,nr:xiaoxi},
+										type: 'get',
+										datatype: 'json',
+										async:false,
+										success: function(dt) {
+											if(dt != false){
+												console.log(dt);
+												$('.form-er').append(`
+													<li class="ni wo" uid = ${dt.uid} woid = ${dt.id}>
+														<div>
+															<p class="name">${dt.uname}</p>
+															<p class="nr">${dt.nr}</p>
+														</div>
+														<img src="http://localhost:50342/images/${dt.uimgsrc}" >
+													</li>
+												`);
+												$('.xiaoxi').val('');
+												$('.form-er').scrollTop($('.form-er').prop('scrollHeight'));
+											}else{
+												alert('服务器异常！');
+											}
+										}
+									})
+								}else{
+									alert('不能发空消息！');
+								}
+							}else{
+								alert('请先登录！');
+							}
+						}else{
+							alert('请先访问首页！');
+						}
+					})
+				}
+				var rjid;
+				var sfzg = false;
+				var user = JSON.parse(sessionStorage.getItem("user"));
+				function dz(){
+					$('.dz').click(function(){
+						let that = this;
+						if(user != '' && user != null){
+							if(sfzg == false){
+								$.ajax({
+									url: 'http://localhost:50342/api/rjdz/Addrjdz',
+									data: {uid:user.id,rid:rjid},
+									type: 'get',
+									datatype: 'json',
+									async:false,
+									success: function(dt) {
+										if(dt != false){
+											$(that).attr('src','images/images/beizan.png');
+											$(that).next().text(parseInt($(that).next().text())+1);
+										}else{
+											alert('服务器异常！');
+										}
+									}
+								})
+							}else{
+								alert('您已经赞过了！不能重复点赞！');
+							}
+						}else{
+							alert('请先登录！');
+						}
+					})
+				}
+				if (sessionStorage.getItem("rjid") != "") {
+					rjid = sessionStorage.getItem("rjid");
+				}
+				if (rjid != null) {
+					$.ajax({
+						url: 'http://localhost:50342/api/rjs/rjsIdShow',
+						data: {
+							rjid
+						},
+						type: 'get',
+						datatype: 'json',
+						async: false,
+						success: function(dt) {
+							let zan ;
+							let pl;
+							$.ajax({
+								url: 'http://localhost:50342/api/rjdz/AnRidShow',
+								data: {rid:rjid},
+								type: 'get',
+								datatype: 'json',
+								async:false,
+								success: function(dt) {
+									zan = dt;
+								}
+							})
+							$.ajax({
+								url: 'http://localhost:50342/api/pls/anRidShow',
+								data: {rid:rjid},
+								type: 'get',
+								datatype: 'json',
+								async:false,
+								success: function(dt) {
+									pl = dt;
+								}
+							})
+							$('.body>.container').html(`
+								<h1 class="body-title">${dt.title}</h1>
+								<div class="fwl">访问量：<span>${dt.ydl}</span> 发布时间：<span>${dt.times}</span></div>
+								<div class="body-item">
+									<p><span style="padding-left:35px;"></span>${dt.ms}</p>
+									<div class="gn">
+										<div><img src="images/images/zan.png" class="dz"><span>${zan}</span></div>
+										<div><img src="images/images/pinglun.png" class="pl"><span>${pl}</span></div>
+									</div>
+									<a href="#"><img src="http://localhost:50342/images/${dt.imgsrc}"></a>
+								</div>
+							`)
+							tanchu();
+							if(user != '' && user != null){
+								$.ajax({
+									url: 'http://localhost:50342/api/rjdz/AnUidShow',
+									data: {
+										uid:user.id,
+										rid:rjid
+									},
+									type: 'get',
+									datatype: 'json',
+									async:false,
+									success: function(dt) {
+										if(dt==true){
+											sfzg=true;
+											console.log(dt);
+											$('.dz').attr('src','images/images/beizan.png');
+										}else{
+											sfzg=false;
+											console.log(dt);
+										}
+									}
+								})
+							}
+							dz()
+						}
+					})
+					$.ajax({
+						url: 'http://localhost:50342/api/pls/plsShow',
+						data: {rid:rjid},
+						type: 'get',
+						datatype: 'json',
+						async:false,
+						success: function(dt) {
+							console.log(dt);
+							$('.form-er').html('');
+							for(let i =0;i<dt.length;i++){
+									if(user != '' && user != null){
+										if(user.id==dt[i].uid){
+											$('.form-er').append(`
+												<li class="ni wo" uid = ${dt[i].uid} woid = ${dt[i].id}>
+													<div>
+														<p class="name">${dt[i].uname}</p>
+														<p class="nr">${dt[i].nr}</p>
+													</div>
+													<img src="http://localhost:50342/images/${dt[i].uimgsrc}" >
+												</li>
+											`);
+										}else{
+											$('.form-er').append(`
+												<li class="ni" uid = ${dt[i].uid} woid = ${dt[i].id}>
+													<img src="http://localhost:50342/images/${dt[i].uimgsrc}" >
+													<div>
+														<p class="name">${dt[i].uname}</p>
+														<p class="nr">${dt[i].nr}</p>
+													</div>
+												</li>
+											`);
+										}
+									}else{
+										$('.form-er').append(`
+											<li class="ni" uid = ${dt[i].uid} woid = ${dt[i].id}>
+												<img src="http://localhost:50342/images/${dt[i].uimgsrc}" >
+												<div>
+													<p class="name">${dt[i].uname}</p>
+													<p class="nr">${dt[i].nr}</p>
+												</div>
+											</li>
+										`);
+									}
+							}
+						}
+					})
+				} else {}
+			})
+		</script>
+	</body>
+</html>

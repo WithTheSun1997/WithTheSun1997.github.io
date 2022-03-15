@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+		<title>关于我们</title>
+		<link rel="icon" sizes="64x64" href="images/link-volunteer.png" >
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="style/banner.css"/>
+		<link rel="stylesheet" type="text/css" href="style/rl.css"/>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		
+		<style>
+			.body-item>a:hover {
+				box-shadow: 0px 4px 21px 0px rgb(0 0 0 / 80%);
+				position: relative;
+				top: -3px;
+			}
+		</style>
+	</head>
+	<body onload="show()">
+		<div class="header">
+			<div class="h-top">
+				<div class="h-logo">
+					<a href="index.html"><img src="images/LOGO1.png"></a>
+				</div>
+				<ul class="h-nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="huodong.html">志愿者活动</a></li>
+					<li><a href="banner.html">关于组织</a></li>
+					<li><a href="./picture_wall/wall.html">志愿者照片墙</a></li>
+				</ul>
+				<div class="h-language">
+					<a href="login.html" class="dr">登入/注册</a>
+					<a href="#" class="uname" style="display: none;"></a>
+					<a href="#" style="display: none;" class="tc">点我退出!</a>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="container">
+				<h1 class="body-title">关于我们</h1>
+				<div class="body-visits">
+					访问量：<span>7179</span>
+				</div>
+				<style>
+					#word>span {
+						opacity: 0;
+					}
+				</style>
+				<div class="body-item">
+					<p id="word"></p>
+					<p>组织长期合作项目有：锡护水联盟、小脚丫助学、四叶草之河小青等...</p>
+					<p>联系我们：关注微信公众号"无锡科院青协"</p>
+					<a href="#"><img src="images/about_our/honor/honor_1.jpg" ></a>
+					<a href="#" class="yin"><img src="images/about_our/honor/honor_2.jpg" ></a>
+					<a href="#" class="yin"><img src="images/about_our/honor/honor_3.jpg" ></a>
+					<a href="#" class="yin"><img src="images/about_our/honor/honor_4.jpg" ></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+					<div class="footer_logo">
+						<p>微信扫描二维码关注官方账号
+						</p>
+							<img src="footer/footer_logo.jpg" title="快快加入我们吧！">
+					</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(window).scroll(function() {
+					$(".yin").css('opacity','0');
+					$(".yins").css('opacity','0');
+					$(".yinss").css('opacity','0');
+					$(".yinsss").css('opacity','0');
+					slideIn($(".yin"), 150);
+					slideIn($(".yins"), 150);
+					slideIn($(".yinss"), 150);
+					slideIn($(".yinsss"), 150);
+				});
+				
+				function slideIn(obj, left) {
+					var MoveHeight, ScrollHeight;
+					MoveHeight = obj.offset().top; //目标元素到顶部的距离
+					ScrollHeight = $(window).scrollTop(); //页面滚动的距离
+					if (ScrollHeight > MoveHeight - 750) {
+						obj.animate({
+							opacity: 1,
+							filter: 'Alpha(opacity=90)'
+						}, 1200);
+					}
+				};
+				var str = `无锡科技职业学院青年志愿者协会直属于无锡科技职业学院团委，是一个组织健全、人员精干、管理严格、制度完善、服务周全的学生组织，同时是校级学生组织之一。自2008年成立以来，校青协不断发展壮大，结构不断完善，其成员统一使用青年志愿者协会的徽章和章程，使用本协会旗帜，其注册的志愿者是合法、正式的志愿者，平均每年完成锡、新吴区和学院志愿服务近40批次，参与总人数达5000余名。学校以“第二课堂成绩单”制度鼓励学生积极参加校内外各项志愿者活动，将学生志愿服务情况纳入到学生综合素养考核中。目前，团队形成了“小脚丫助学、黄昏晓助老、七彩趣课堂、四叶草环保”品牌性志愿服务项目，在志愿服务的道路上，取得了一个又一个显著的成就。如今，校青协现设有组织部、宣传部、对外联系部三个职能部门，各部门分工合作，团结友爱、互帮互助，以“奉献青春一起来，志愿有你更精彩”的口号构成校青年志愿者协会大家庭，开展各项校内外志愿活动，通过志愿服务活动来更进一步地丰富在校同学的课余生活，培养同学们的志愿者精神，提升能力，升华品质。`;
+				for (var i = 0; i < str.length; i++) {
+					$("#word").append("<span>" + str[i] + "</span>");
+				}
+				var j = 0;
+				show = function() {
+					$("#word>span").eq(j).animate({
+						opacity: "1"
+					}, 100);
+					j += 1;
+					var t = setTimeout("show()", 100);
+					if (j >= str.length) {
+						clearTimeout(t);
+					}
+				}
+				show();
+			})
+		</script>
+		
+	</body>
+</html>

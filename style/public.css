@@ -1,0 +1,186 @@
+@font-face {
+	font-family: wending;
+	src: url("../font/SourceHanSansCN-Normal.ttf");
+}
+
+* {
+	font-family: wending;
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    width: 1270px ;
+    height: 1000px;
+    background: #d8d8d8 url(../images/login_video_BG/BG_02.jpg) fixed !important;
+    font: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: rgb(175, 174, 174);
+	align-content: center;
+}
+.h-top {
+	position: absolute;
+	width: 1300px;
+	height: 80px;
+	color: #fff;
+	background-color: rgba(41, 40, 40, 0.411);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+  }
+  
+  .header a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+  }
+  
+  .h-logo {
+	margin-left: 50px;
+  }
+  
+  .h-logo,
+  .h-logo > a,
+  .h-logo img {
+	display: block;
+	height: 60px;
+	width: 250px;
+  }
+  
+  .h-nav {
+	display: flex;
+	height: 100%;
+  }
+  
+  .h-nav > li {
+	height: 100%;
+  }
+  
+  .h-nav a {
+	display: block;
+	line-height: 80px;
+	padding: 0 20px;
+  }
+  
+  .h-nav a:hover {
+	color: #c00d16;
+  }
+  
+  .h-language {
+	margin-right: 50px;
+  }
+  
+  .h-language > a {
+	margin-right: 10px;
+	font-size: 16px;
+	line-height: 16px;
+  }
+
+input,
+textarea {
+	padding: 0;
+	margin: 0;
+	background: none;
+	outline: none;
+}
+select{
+	outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+}
+
+ul,
+ol,
+dl,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+.footer {
+	display: flex;
+	background: rgba(97, 93, 93, 0.438);
+	height: 300px;
+	width: auto;
+	padding-top: 52px;
+	color: #fff;
+	box-sizing: border-box;
+}
+.footer_logo {
+	margin-left: 40%;
+	width: 500px;
+	height: auto;
+}
+
+.footer_logo img{
+	display: inline-block;
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	border-radius: 30px;
+
+}
+.footer-container {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*移动*/
+@media screen and (max-width:750px) {
+	.h-top{
+		height: 50px;
+	}
+	.h-nav a{
+		line-height: 50px;
+	}
+	.h-logo{
+		margin-left: 0%;
+	}
+	.h-logo, .h-logo>a, .h-logo img{
+		width: 50px;
+		height: 40px;
+	}
+	.h-nav a{
+		padding: 0 5px;
+		white-space: nowrap;
+	}
+	.h-nav{
+		/* justify-content: space-between; */
+	}
+	.h-language{
+		margin-right: 0;
+		display: none;
+	}
+	.header{
+		min-width: 0;
+		width: 100%;
+	}
+	.h-top{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+	}
+	
+	p{
+		padding: 0 15px;
+	}
+}

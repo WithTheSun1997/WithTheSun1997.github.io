@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>部门活动</title>
+		<link rel="icon" sizes="64x64" href="images/link-volunteer.png" >
+		<link rel="stylesheet" type="text/css" href="style/base.css"/>
+		<link rel="stylesheet" href="style/public.css">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link rel="stylesheet" type="text/css" href="style/huodong.css"/>
+	</head>
+
+	<body>
+		<!-- 顶部star -->
+		<header class="header-top">
+			<div class="header">
+				<div class="h-top">
+					<div class="h-logo">
+						<a href="#"><img src="images/LOGO1.png"></a>
+					</div>
+					<ul class="h-nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="huodong.html">志愿新闻</a></li>
+						<li><a href="banner.html">关于组织</a></li>
+						<style type="text/css">
+							.xl {
+								position: absolute;
+								top: 80px;
+								width: 100%;
+								z-index: 9999;
+								background-color: rgb(255, 255, 255, .9);
+								display: none;
+								border-bottom-left-radius: 3px;
+								border-bottom-right-radius: 3px;
+							}
+	
+							.xl>li {
+								color: #4d4d4d;
+								font-size: 14px;
+								padding: 5px;
+								text-align: center;
+								white-space: 100%;
+								box-sizing: border-box;
+							}
+							#word>span {
+								opacity: 0;
+							}
+						</style>
+						<script type="text/javascript">
+							$(function(){
+								$('.h-nav>li').hover(
+									function(){
+										$(this).find('ul').slideDown(100);
+									},
+									function(){
+										$(this).find('ul').slideUp(100);
+									}
+								)
+							})
+						</script>
+						<li style="position: relative;">
+							<a href="./picture_wall/wall.html">志愿者照片墙</a>
+							<ul class="xl">
+							</ul>
+						</li>
+					</ul>
+					<div class="h-language">
+						<a href="login.html" class="dr">登入/注册</a>
+						<a href="#" class="uname" style="display: none;"></a>
+						<a href="#" style="display: none;" class="tc">点我退出!</a>
+					</div>
+				</div>
+				
+				<script type="text/javascript">
+					$('.box-img').click(function() {
+						location.href = 'huodong.html';
+					});
+				</script>
+			</div>
+		</header>
+		<!-- 顶部end -->
+		<!-- 内容主体star -->
+		<section id="content">
+			<style type="text/css">
+				.header {
+					padding: 40px 0;
+					box-sizing: border-box;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				.header>.yi {
+					width: 20%;
+					margin-right: 5%;
+				}
+
+				.header>.yi>img {
+					display: block;
+					width: 100%;
+				}
+
+				.header>.er {
+					width: 75%;
+					height: 200px;
+					display: flex;
+					flex-wrap: wrap;
+					flex-flow: column;
+					justify-content: space-between;
+				}
+
+				.er-item {
+					display: flex;
+					width: 100%;
+				}
+
+				.er-item-h {
+					display: flex;
+					justify-content: space-between;
+					width: 80px;
+					font-weight: bold;
+					margin-right: 10px;
+				}
+
+				.n-h {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 100%;
+					padding: 0 20px;
+					box-sizing: border-box;
+					margin: 20px auto;
+				}
+
+				.n-h>img {
+					display: block;
+					width: 25px;
+					height: 25px;
+					cursor: pointer;
+				}
+
+				.content_item {
+					position: relative;
+				}
+
+				.content_item>img {
+					position: absolute;
+					width: 25px;
+					right: 20px;
+					bottom: 20px;
+					margin: auto;
+					cursor: pointer;
+				}
+			</style>
+			<div class="n-h">
+				<h3>部门活动</h3>
+				<img src="images/images/bianji3.png" class="sahngchuan">
+			</div>
+			<!-- 新闻列表模块star -->
+			<div class="content-list w">
+				<!-- 单个新闻盒子star -->
+				<div class="content_item">
+					<a href="#">
+						<img src="/images/active/huodong_1.jpg" alt="" width="190" height="124px">
+						<h3>2021.12.5国际志愿人员日</h3>
+						<p>99阅读 评论 n天前</p>
+					</a>
+					<img src="/images/active/huodong_1.jpg">
+				</div>
+				<!-- 单个新闻盒子end -->
+				<!-- 单个新闻盒子star -->
+				<div class="content_item">
+					<a href="#">
+						<img src="/images/active/huodong_2.jpg" alt="" width="190" height="124px">
+						<h3>第三届校友日暨在校学生嘉年华已圆满结束！</h3>
+						<p>99阅读 评论 1天前</p>
+					</a>
+					<img src="/images/active/huodong_2_1.jpg">
+				</div>
+				<!-- 单个新闻盒子end -->
+				<!-- 单个新闻盒子star -->
+				<div class="content_item">
+					<a href="#">
+						<img src="images/085918.jpg" alt="" width="190" height="124px">
+						<h3>2021年7月15日放暑假了！</h3>
+						<p>99阅读 评论 1天前</p>
+					</a>
+					<img src="images/images/shanchu.png">
+				</div>
+				<!-- 单个新闻盒子end -->
+				<!-- 单个新闻盒子star -->
+				<div class="content_item">
+					<a href="#">
+						<img src="/images/active/huodong_3.jpg" alt="" width="190" height="124px">
+						<h3>科院校青协 全体见面会，一见“青”心 “协”手同行</h3>
+						<p>99阅读 评论 1天前</p>
+					</a>
+					<img src="/images/active/huodong_3_1.jpg">
+				</div>
+				<!-- 单个新闻盒子end -->
+			</div>
+			<!-- 新闻列表模块end -->
+		</section>
+		<style type="text/css">
+			.form {
+				width: 500px;
+				height: 475px;
+				background-color: #fff;
+				position: fixed;
+				left: calc(50% - 250px);
+				top: calc(50% - 250px);
+				border-radius: 5px;
+				box-shadow: 0px 0px 20px 2px #666;
+				display: flex;
+				justify-content: space-between;
+				overflow: hidden;
+				display: none;
+			}
+
+			.form-yi {
+				width: 30px;
+				height: 100%;
+				background-color: rgb(41 40 40 / 41%);
+			}
+
+			.form-er {
+				width: 470px;
+				height: 100%;
+				box-sizing: border-box;
+				padding: 20px;
+			}
+
+			.form-er>.h {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: #2953FF;
+				margin-bottom: 20px;
+			}
+
+			.form-er>.h>div {
+				display: flex;
+				align-items: center;
+				font-weight: bold;
+				font-size: 18px;
+			}
+
+			.form-er>.h>img {
+				display: block;
+				width: 25px;
+				height: 25px;
+			}
+
+			.form-er>.h>div>img {
+				width: 30px;
+				height: 30px;
+				display: block;
+			}
+
+			.form-er>.input {
+				margin-bottom: 10px;
+			}
+
+			.form-er>.input>p {
+				font-size: 14px;
+				color: #3C3C3C;
+				margin-bottom: 5px;
+				display: flex;
+				align-items: center;
+			}
+
+			.form-er>.input>p>img {
+				display: block;
+				width: 18px;
+				margin-left: 3px;
+			}
+
+			.form-er>.input>input,
+			.form-er>.input>textarea {
+				display: block;
+				padding: 0 10px;
+				margin: 0;
+				outline: none;
+				background-color: #E6E6E6;
+				border: none;
+				border-radius: 5px;
+				width: 100%;
+				height: 40px;
+				box-sizing: border-box;
+			}
+
+			.form-er>.input>textarea {
+				resize: none;
+				padding: 10px;
+				height: 80px;
+			}
+
+			.form-er .imgsc {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer !important;
+			}
+
+			.form-er .imgfile {
+				position: relative;
+				background-color: rgb(41 40 40 / 41%);
+				color: #fff;
+				font-size: 12px;
+				justify-content: center;
+				width: 90px;
+				height: 23px;
+				display: flex;
+				align-items: center;
+				border-radius: 5px;
+				cursor: pointer !important;
+			}
+
+			.form-er .input>div {
+				height: 80px;
+				display: flex;
+				align-items: center;
+			}
+
+			.form-er .input>div>.yudiv {
+				width: 320px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.form-er .input>div>.yudiv>img {
+				height: 100%;
+			}
+
+			.form-er .button {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 10px;
+			}
+
+			.form-er .button>button {
+				width: 80px;
+				height: 80px;
+				border-radius: 100%;
+				color: #fff;
+				font-size: 18px;
+				background-color: #E6E6E6;
+			}
+
+			.form-er .button>button>img {
+				display: block;
+				width: 40px;
+				margin: auto;
+			}
+
+			.form-er .button>button:last-of-type {
+				background-color: rgb(41 40 40 / 41%);
+			}
+		</style>
+		<div class="form">
+			<div class="form-yi"></div>
+			<div class="form-er">
+				<div class="h">
+					<div><img src="images/images/scrj.png">
+						<p>发布活动</p>
+					</div>
+					<img src="images/images/guanbi.png" class="guanbi">
+				</div>
+				<div class="input">
+					<p>活动标题<img src="images/images/bianji.png"></p>
+					<input type="text" id="title">
+				</div>
+				<div class="input">
+					<p>活动内容<img src="images/images/bianji.png"></p>
+					<textarea rows="" cols="" id="ms"></textarea>
+				</div>
+				<div class="input">
+					<p>上传图片<img src="images/images/iconimg.png"></p>
+					<div>
+						<div class="imgfile"><input type="file" class="imgsc" id="imgsc" />上传图片</div>
+						<div class="yudiv"><img src="images/images/iconimg2.png" class="yubeiimg"></div>
+					</div>
+				</div>
+				<div class="button">
+					<button class="NO"><img src="images/images/qingkong2.png"></button>
+					<button class="OK"><img src="images/images/shangchuan3.png"></button>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="footer">
+			<div class="footer_logo">
+				<p>微信扫描二维码关注官方账号
+				</p>
+					<img src="footer/footer_logo.jpg" title="快快加入我们吧！">
+			</div>
+</div> -->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.imgsc').change(function() {
+					let obj = document.getElementById('imgsc');
+					let image = obj.files[0]; //获取文件域中选中的图片
+					let reader = new FileReader(); //实例化文件读取对象
+					reader.readAsDataURL(image); //将文件读取为 DataURL,也就是base64编码
+					reader.onload = function(ev) { //文件读取成功完成时触发
+						let dataURL = ev.target.result; //获得文件读取成功后的DataURL,也就是base64编码
+						document.querySelector(".yubeiimg").src = dataURL; //将DataURL码赋值给img标签
+					}
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				var user = JSON.parse(sessionStorage.getItem("user"));
+				if(user != null){
+					$('.dr').hide();
+					$('.name').show();
+					$('.name').find('a').html('欢迎'+user.name+'!');
+					$('.tuichu').show();
+					$('.tuichu').click(function(){
+						sessionStorage.setItem("user",null)
+						$('.dr').show();
+						$('.name').hide();
+						$('.tuichu').hide();
+					});
+				}
+				function clearinput(){
+					$('#title').val('')
+					$('#ms').val('')
+					$('#imgsc').val('')
+					$('.yubeiimg').attr('src','images/images/iconimg2.png')
+				}
+				$('.NO').click(function(){
+					clearinput();
+				})
+				$('.OK').click(function() {
+					if (user != '' && user != null) {
+						if (user.quanxian == 1) {
+							let myDate = new Date();
+							let title = $('#title').val();
+							let ms = $('#ms').val();
+							let times = myDate.toLocaleDateString();
+							var formData = new FormData();
+							formData.append("photo", $("#imgsc")[0].files[0]);
+							formData.append("service", 'App.Passion.UploadFile');
+							formData.append("token", "123");
+							formData.append("title", title);
+							formData.append("ms", ms);
+							formData.append("times", times);
+							$.ajax({
+								url: 'http://localhost:50342/api/rjs/sc',
+								type: 'post',
+								data: formData,
+								contentType: false,
+								processData: false,
+								success: function(dt) {
+									if (dt != null) {
+										$('.form').css('display', 'none');
+										$('.content-list').append(
+											`
+											<div class="content_item" id="${dt.id}" ydl="${dt.ydl}">
+												<a href="#">
+													<img src="http://localhost:50342/images/${dt.imgsrc}" width="190" height="124px">
+													<h3>${dt.title}</h3>
+													<p><span class="ydl">${dt.ydl}</span>阅读 0赞 0评论 ${dt.times}</p>
+												</a>
+												<img src="images/images/shanchu.png" class="shanchu">
+											</div>
+										`
+										)
+										rjclick();
+										rjdel()
+									} else {
+										alert('服务器异常！');
+									}
+								}
+							})
+						} else {
+							alert('只有管理员才可以发布活动哦！');
+						}
+					} else {
+						alert('请先登录！');
+					}
+				})
+
+				function rjdel() {
+					$('.shanchu').click(function() {
+						console.log('触发+1');
+						if (user != '' && user != null) {
+							if (user.quanxian == 1) {
+								let that = this;
+								let rid = $(this).parent().attr('id');
+								$.ajax({
+									url: 'http://localhost:50342/api/rjs/rjdel',
+									data: {
+										rjid: rid
+									},
+									type: 'get',
+									datatype: 'json',
+									async: false,
+									success: function(dt) {
+										if (dt != false) {
+											console.log(dt);
+											alert('操作成功！');
+											$(that).parent().remove();
+										} else {
+											console.log(dt);
+											alert('删除服务器异常！');
+										}
+									}
+								})
+
+							} else {
+								alert('只有管理员才可以删除活动哦！');
+							}
+						} else {
+							alert('请先登录！');
+						}
+						return false;
+					})
+				}
+				$('.sahngchuan').click(function() {
+					$('.form').css('display', 'flex');
+				})
+				$('.guanbi').click(function() {
+					$('.form').css('display', 'none');
+					clearinput();
+				})
+				rjclick();
+
+				function rjclick() {
+					$('.content-list>.content_item').click(function() {
+						let that =this;
+						let id = $(this).attr('id');
+						$.ajax({
+							url: 'http://localhost:50342/api/rjs/rjsIdShow',
+							data: {
+								rjid: id
+							},
+							type: 'get',
+							datatype: 'json',
+							async: false,
+							success: function(dt) {
+								if(dt != null && dt != ''){
+									$.ajax({
+										url: 'http://localhost:50342/api/rjs/addbfl',
+										data: {
+											rid: id,
+											ydl:dt.ydl+1
+										},
+										type: 'get',
+										datatype: 'json',
+										async: false,
+										success: function(dt) {
+											if(dt != false){
+												$(that).find('.ydl').text(1+dt.ydl);
+												console.log('增加一次访问！');
+											}else{
+												console.log('系统异常！');
+											}
+										}
+									})
+									sessionStorage.setItem("rjid", id)
+									window.location.href = 'rj.html';
+								}else{
+									alert('活动已被管理员删除，有需要请联系管理员！');
+								}
+							},
+							error:function(){
+								alert('活动已被管理员删除，有需要请联系管理员！');
+							}
+						})
+					})
+				}
+				$.ajax({
+					url: 'http://localhost:50342/api/rjs/rjsShow',
+					data: {},
+					type: 'get',
+					datatype: 'json',
+					async: false,
+					success: function(dt) {
+						$('.content-list').html('');
+						for (let i = 0; i < dt.length; i++) {
+							let zan;
+							let pl;
+							$.ajax({
+								url: 'http://localhost:50342/api/rjdz/AnRidShow',
+								data: {
+									rid: dt[i].id
+								},
+								type: 'get',
+								datatype: 'json',
+								async: false,
+								success: function(dt) {
+									zan = dt;
+								}
+							})
+							$.ajax({
+								url: 'http://localhost:50342/api/pls/anRidShow',
+								data: {
+									rid: dt[i].id
+								},
+								type: 'get',
+								datatype: 'json',
+								async: false,
+								success: function(dt) {
+									pl = dt;
+								}
+							})
+							$('.content-list').append(
+								`
+								<div class="content_item" id="${dt[i].id}" ydl="${dt[i].ydl}">
+									<a href="#">
+										<img src="http://localhost:50342/images/${dt[i].imgsrc}" alt="" width="190" height="124px">
+										<h3>${dt[i].title}</h3>
+										<p><span class="ydl">${dt[i].ydl}</span>阅读 ${zan}赞 ${pl}评论 ${dt[i].times}</p>
+									</a>
+									<img src="images/images/shanchu.png" class="shanchu">
+								</div>
+							`
+							)
+						}
+						rjclick();
+						rjdel();
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

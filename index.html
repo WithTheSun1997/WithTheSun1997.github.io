@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+		<title>科院校青年志愿者协会</title>
+		<link rel="icon" sizes="64x64" href="images/link-volunteer.png" >
+		<link rel="stylesheet" type="text/css" href="style/public.css" />
+		<link rel="stylesheet" type="text/css" href="style/index.css" />
+		<link rel="stylesheet" type="text/css" href="style/rl.css"/>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body onload="show()">
+
+		<div class="header">
+			<div class="h-top">
+				<div class="h-logo">
+					<a href="#"><img src="images/LOGO1.png"></a>
+				</div>
+				<ul class="h-nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="huodong.html">志愿新闻</a></li>
+					<li><a href="banner.html">关于组织</a></li>
+					<style type="text/css">
+						.xl {
+							position: absolute;
+							top: 80px;
+							width: 100%;
+							z-index: 9999;
+							background-color: rgb(255, 255, 255, .9);
+							display: none;
+							border-bottom-left-radius: 3px;
+							border-bottom-right-radius: 3px;
+						}
+
+						.xl>li {
+							color: #4d4d4d;
+							font-size: 14px;
+							padding: 5px;
+							text-align: center;
+							white-space: 100%;
+							box-sizing: border-box;
+						}
+						#word>span {
+							opacity: 0;
+						}
+					</style>
+					<script type="text/javascript">
+						$(function(){
+							$('.h-nav>li').hover(
+								function(){
+									$(this).find('ul').slideDown(100);
+								},
+								function(){
+									$(this).find('ul').slideUp(100);
+								}
+							)
+						})
+					</script>
+					<li style="position: relative;">
+						<a href="./picture_wall/wall.html">志愿者照片墙</a>
+					</li>
+					<li><a href="shoppingMall.html"></a></li>
+				</ul>
+				<div class="h-language">
+					<a href="login.html" class="dr">登入/注册</a>
+					<a href="#" class="uname" style="display: none;"></a>
+					<a href="#" style="display: none;" class="tc">点我退出!</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-img"><img src="images/banner/picture_1.jpg"></div>
+				<div class="box-img"><img src="images/banner/picture_2.jpg"></div>
+				<div class="box-img"><img src="images/banner/picture_3.jpg"></div>
+				<div class="h-banner-text" style="z-index: 9999;">
+					<h1>科院校青年志愿者协会</h1>
+					<p id="word">&emsp; &emsp;</p>
+					<!-- <button type="button"><a href="https://mp.weixin.qq.com/s/tlWkYLXKX7TJt6cx5bV0ow">查看更多</a></button> -->
+				</div>
+				<div class="box-left">&lt;</div>
+				<div class="box-right">&gt;</div>
+				<div class="box-zhiding">
+					<ul>
+						<li class="botton"></li>
+						<li class="botton"></li>
+						<li class="botton"></li>
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$('.box-img').click(function() {
+					location.href = 'huodong.html';
+				});
+			</script>
+		</div>
+		 <div class="body">
+			<div class="container">
+				<ul class="body-onelist">
+					<li class="body-onelist-one">
+						 <div class="body-title">
+							<h3>活动记录</h3>
+							<span>更多&gt;</span>
+						 </div>
+						<a href="https://mp.weixin.qq.com/s/oY70KHMfvAzonOOWgrzGwQ">
+							
+								<span class="body-title-img">
+									<img src="images/active/active_1.jpg" alt="">
+								</span>
+								<div class="body-title-div">
+									<h3 class="body-title-h4">北京冬奥会吉祥物冰墩墩（Bing Dwen Dwen）</h3>
+									<p class="body-title-span">
+										&nbsp; &nbsp; 冰墩墩（Bing Dwen Dwen），是北京2022年冬奥会的吉祥物。将熊猫形象与富有超能量的冰晶外壳相结合，头部外壳造型取自冰雪运动头盔，装饰彩色光环，整体形象酷似航天员。
+									</p>
+								</div>			
+						</a>
+					</li>
+				</ul>
+				<ul class="body-onelist">
+					<li class="body-onelist-one">
+						 <div class="body-title">
+							<h3>活动记录</h3>
+							<span>更多&gt;</span>
+						 </div>
+						<a href="https://mp.weixin.qq.com/s/oY70KHMfvAzonOOWgrzGwQ">
+							
+								<span class="body-title-img">
+									<img src="images/active/active_1.jpg" alt="">
+								</span>
+								<div class="body-title-div">
+									<h3 class="body-title-h4">北京冬奥会吉祥物冰墩墩（Bing Dwen Dwen）</h3>
+									<p class="body-title-span">
+										&nbsp; &nbsp; 冰墩墩（Bing Dwen Dwen），是北京2022年冬奥会的吉祥物。将熊猫形象与富有超能量的冰晶外壳相结合，头部外壳造型取自冰雪运动头盔，装饰彩色光环，整体形象酷似航天员。
+									</p>
+								</div>			
+						</a>
+					</li>
+				</ul>
+				<ul class="body-threelist">
+					<li class="body-onelist-one">
+						<div class="body-title">
+						   <h3>活动记录</h3>
+						   <span>更多&gt;</span>
+						</div>
+					   <a href="https://mp.weixin.qq.com/s/oY70KHMfvAzonOOWgrzGwQ">
+						   
+							   <span class="body-title-img">
+								   <img src="images/active/active_1.jpg" alt="">
+							   </span>
+							   <div class="body-title-div">
+								   <h3 class="body-title-h4">北京冬奥会吉祥物冰墩墩（Bing Dwen Dwen）</h3>
+								   <p class="body-title-span">
+									   &nbsp; &nbsp; 冰墩墩（Bing Dwen Dwen），是北京2022年冬奥会的吉祥物。将熊猫形象与富有超能量的冰晶外壳相结合，头部外壳造型取自冰雪运动头盔，装饰彩色光环，整体形象酷似航天员。
+								   </p>
+							   </div>			
+					   </a>
+				   </li>
+					
+				</ul>
+			</div>
+			<ul class="body-sixlist" target="_blank">
+				<li>
+					<a href="https://mp.weixin.qq.com/s/oY70KHMfvAzonOOWgrzGwQ">
+						<span class="body-sixlist-number">01</span>
+						<div class="body-sixlist-text">
+							<h3 >2022北京冬奥|一起向未来	</h3>
+							<p>&nbsp; &nbsp; 今天20时
+							作为双奥之城的北京，世界瞩目的焦点，
+							全世界期待着北京冬奥会创造又一个奇迹！
+							2022北京冬奥会		
+							我们一起领略冬奥健儿的风采！</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://mp.weixin.qq.com/s/FWcZcPrWaVRC5mA_Pa5DzA" target="_blank">
+						<span class="body-sixlist-number">02</span>
+						<div class="body-sixlist-text">
+							<h3>国际志愿人员日|志愿者在行动</h3>
+							<p>&nbsp; &nbsp; 你知道吗?
+								今天是第36个国际志愿人员日关于志愿者你知道多少呢？</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://mp.weixin.qq.com/s/lD_sXnYRpLKZlqFbTXlABA" target="_blank">
+						<span class="body-sixlist-number">03</span>
+						<div class="body-sixlist-text">
+							<h3>注意啦！！科院献血活动最新报道</h3>
+							<p>&nbsp; &nbsp; 11月23日
+								无锡科院爱心献血活动第二天								
+								活动现场气氛热情高涨								
+								同学们积极参与无偿献血活动								
+								截止至23日晚								
+								两日共计献血人数两百有余</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://mp.weixin.qq.com/s/tFUHeInguAK2WwyL9RLpng" target="_blank">
+						<span class="body-sixlist-number">04</span>
+						<div class="body-sixlist-text">
+							<h3>青年志愿者协会招新啦！</h3>
+							<p>&nbsp; &nbsp; 亲爱的2020级萌新们
+								希望在这里						
+								你们可以开启一段全新的旅程</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div> 
+		
+		
+		
+		<script type="text/javascript">
+			$(function() {
+				var ZXY_index = 0; //标记当前图片索引
+				var ZXY_f;
+				ZXY_dingshiqi();
+
+				function ZXY_dingshiqi() {
+					ZXY_f = setInterval(function() {
+						if (ZXY_index == $(".box-img").length - 1) {
+							ZXY_index = 0;
+							$(".box-img").css("opacity", "0");
+							$(".box-img").eq(ZXY_index).css("opacity", "1");
+							$(".botton").css("background-color", "#ccc");
+							$(".botton").eq(ZXY_index).css("background-color", "#fff");
+						} else {
+							ZXY_index++;
+							$(".box-img").css("opacity", "0");
+							$(".box-img").eq(ZXY_index).css("opacity", "1");
+							$(".botton").css("background-color", "#ccc");
+							$(".botton").eq(ZXY_index).css("background-color", "#fff");
+						}
+					}, 4000)
+				}
+				$(".box-left").click(function() {
+					clearInterval(ZXY_f);
+					if (ZXY_index == 0) {
+						ZXY_index = $(".box-img").length - 1;
+						$(".box-img").css("opacity", "0");
+						$(".box-img").eq(ZXY_index).css("opacity", "1");
+						$(".botton").css("background-color", "#ccc");
+						$(".botton").eq(ZXY_index).css("background-color", "#fff");
+						ZXY_dingshiqi();
+					} else {
+						ZXY_index--;
+						$(".box-img").css("opacity", "0");
+						$(".box-img").eq(ZXY_index).css("opacity", "1");
+						$(".botton").css("background-color", "#ccc");
+						$(".botton").eq(ZXY_index).css("background-color", "#fff");
+						ZXY_dingshiqi();
+					}
+				})
+				$(".box-right").click(function() {
+					clearInterval(ZXY_f);
+					if (ZXY_index == $(".box-img").length - 1) {
+						ZXY_index = 0;
+						$(".box-img").css("opacity", "0");
+						$(".box-img").eq(ZXY_index).css("opacity", "1");
+						$(".botton").css("background-color", "#ccc");
+						$(".botton").eq(ZXY_index).css("background-color", "#fff");
+						ZXY_dingshiqi();
+					} else {
+						ZXY_index++;
+						$(".box-img").css("opacity", "0");
+						$(".box-img").eq(ZXY_index).css("opacity", "1");
+						$(".botton").css("background-color", "#ccc");
+						$(".botton").eq(ZXY_index).css("background-color", "#fff");
+						ZXY_dingshiqi();
+					}
+				})
+
+				$(".botton").click(function() {
+					clearInterval(ZXY_f);
+					var ZXY_indexx = $(this).index();
+					ZXY_index = ZXY_indexx;
+					$(".box-img").css("opacity", "0");
+					$(".box-img").eq(ZXY_index).css("opacity", "1");
+					$(".botton").css("background-color", "#ccc");
+					$(".botton").eq(ZXY_index).css("background-color", "#fff");
+					ZXY_dingshiqi();
+				})
+				$('.h-top').css({
+					'position': 'fixed',
+					'z-index': '999999'
+				})
+				var user;
+				if (sessionStorage.getItem("user") != "") {
+					user = JSON.parse(sessionStorage.getItem("user"));
+				}
+				if(user != null){
+					console.log(user);
+					let ZXY_mima = user.password;
+					let ZXY_name = user.name;
+					if (ZXY_name != null && ZXY_mima != null) {
+						$('.dr').hide();
+						$('.uname').text(ZXY_name).show();
+						$('.tc').click(function() {
+							sessionStorage.removeItem("user");
+							ZXY_zhang = null;
+							ZXY_mima = null;
+							ZXY_mima = null;
+							$('.dr').show();
+							$('.uname').hide();
+							$('.tc').hide();
+						}).show();
+					}
+				}
+			})
+		</script>
+		<script>
+			$(function() {
+				$(window).scroll(function() {
+					$(".body-threelist").css('opacity','0');
+					// $(".body-fourlist").css('opacity','0');
+					// $(".body-fivelist").css('opacity','0');
+					$(".body-sixlist").css('opacity','0');
+					$(".shop").css('opacity','0');
+					$(".footer").css('opacity','0');
+					slideIn($(".body-threelist"), 150);
+					// slideIn($(".body-fourlist"), 150);
+					// slideIn($(".body-fivelist"), 150);
+					slideIn($(".body-sixlist"), 150);
+					slideIn($(".shop"), 150);
+					slideIn($(".footer"), 150);
+				});
+
+				function slideIn(obj, left) {
+					var MoveHeight, ScrollHeight;
+					MoveHeight = obj.offset().top; //目标元素到顶部的距离
+					ScrollHeight = $(window).scrollTop(); //页面滚动的距离
+					if (ScrollHeight > MoveHeight - 750) {
+						obj.animate({
+							opacity: 1,
+							filter: 'Alpha(opacity=90)'
+						}, 1200);
+					}
+				};
+				
+				var str =  `无锡科技职业学院校青年志愿者协会秉承"奉献、友爱、互助、进步"的志愿精神，是一支组织健全、制度完善、服务周全的组织。在这里将为你提供校内外的志愿资源和精彩消息。无志愿，不青春，我们一直在路上！`;
+				for (var i = 0; i < str.length; i++) {
+					$("#word").append("<span>" + str[i] + "</span>");
+				}
+				var j = 0;
+				show = function() {
+					$("#word>span").eq(j).animate({
+						opacity: "1"
+					}, 100);
+					j += 1;
+					var t = setTimeout("show()", 200);
+					if (j >= str.length) {
+						clearTimeout(t);
+					}
+				}
+				show();
+			});
+		</script>
+	</body>
+</html>

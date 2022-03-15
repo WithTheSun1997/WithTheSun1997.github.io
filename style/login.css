@@ -1,0 +1,374 @@
+/* html { 
+	background: url(../images/login_BG.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+  } */
+.videoBG {
+  position: fixed;
+  width: auto;
+  height: 840px;
+  z-index: -1;
+  
+}
+.img_icon {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+#login-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(5, 5, 5, 0.8);
+  overflow: hidden;
+  opacity: 0.4;
+  box-shadow: 10px 10px 30px #000;
+  z-index: 1;
+}
+
+/* form表单中关闭按钮————start */
+
+#close-btn img {
+  position: absolute;
+  cursor: pointer;
+  font-family: "Microsoft YaHei", sans-serif;
+  line-height: 18px;
+  top: 3px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0.2;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#close-btn:hover {
+  opacity: 0.5;
+}
+
+/* form表单中关闭按钮————end */
+
+.body-form h1 {
+  font-family: "Microsoft YaHei", sans-serif;
+  position: relative;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 30px;
+  color: #ddd;
+  text-shadow: 3px 3px 10px #000;
+  padding: 20px 0 20px 0;
+}
+
+.body-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 350px;
+  height: 380px;
+  border-radius: 5px;
+  background: rgba(3, 3, 3, 0.5);
+  box-shadow: 1px 1px 50px rgb(36, 36, 36);
+  display: none;
+}
+/* .body-form {
+	width: 344px;
+	height: 368px;
+	background: #fff;
+	padding: 0 24px;
+	position: absolute;
+	top: 56px;
+	left: 50%;
+	margin-left: 152px;
+	box-sizing: border-box;
+  } */
+
+.header {
+  height: 60px;
+  /* background-color: #dfdddd; */
+  position: absolute;
+  /* min-width: 1000px; */
+}
+
+/* header 部分样式*/
+.container {
+  /* width: 992px; */
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 43px;
+  line-height: 40px;
+  padding-right: 15px;
+  border-right: solid 1px #ebe8e8;
+}
+.header-logo1 {
+  height: 50px;
+  line-height: 40px;
+  padding-right: 15px;
+}
+
+.header-yi {
+  display: flex;
+}
+
+.header-logo > a,
+.header-logo img {
+  width: 70px;
+  height: 50px;
+  /* max-height: 100%; */
+  max-width: 100%;
+}
+
+.header-logo1 img {
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  background-position: center center;
+}
+
+/* .header-text {
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #333;
+  padding-left: 15px;
+} */
+/* ______header ____end */
+
+.body {
+  width: 100%;
+  height: 600px;
+  /* background: url(../images/login_BG.png) no-repeat center center fixed; */
+  background-position: center center;
+  position: relative;
+}
+
+.body-form-t {
+  line-height: 72px;
+  height: 72px;
+  border-bottom: solid 1px #e5e5e5;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.body-input {
+  display: flex;
+  /* padding-bottom: 16px; */
+  margin: 0 10px 0 10px;
+  height: 60px;
+}
+
+.body .iconfont {
+  font-size: 17px !important;
+}
+
+.body-input > span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #9a9a9a;
+  background-color: #f1f1f1;
+  border: solid 1px #ddd;
+}
+
+.body-input > input {
+  /* width: 256px;
+  height: 40px;
+  border: solid 1px #ddd;
+  padding: 0;
+  padding: 0 15px;
+  border-left: none;
+  font-size: 14px;
+  line-height: 20px; */
+  font-family: "Microsoft YaHei", sans-serif;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 9px auto;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  padding-left: 10px;
+  background: rgba(3, 3, 3, 0.1);
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(3, 3, 3, 0.18);
+}
+
+/* 通过伪类改变输入框中的默认颜色 */
+::-webkit-input-placeholder {
+  color: rgb(170, 166, 166);
+}
+
+.body-form .log-verify {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.body-form .log-verify > input {
+  display: inline;
+  width: 200px;
+  height: 35px;
+  padding-left: 10px;
+  border: 1px solid rgb(129, 128, 128);
+  border-radius: 10px;
+}
+.body-form .log-verify > div {
+  float: right;
+  height: 40px;
+  padding-right: 40px;
+}
+
+.body-wj {
+  font-size: 14px;
+  line-height: 20px;
+  margin: -3px 0 23px;
+  text-align: right;
+}
+.body-wj > a {
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-btn {
+  padding-top: 30px;
+  text-align: center;
+}
+.body-btn > button {
+  width: 50%;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  cursor: pointer;
+  border: none;
+  background: rgb(153, 67, 67);
+  border-radius: 5px;
+}
+.body-btn > button:hover {
+  opacity: 0.7;
+}
+
+#remember-container {
+  position: relative;
+  display: inline;
+  margin-left: 10px;
+}
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 4px;
+  background: rgba(3, 3, 3, 0.2);
+  width: 16px;
+  height: 14px;
+  margin-top: 40px;
+  line-height: 15px;
+}
+
+.checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox:checked {
+  background: rgba(3, 3, 3, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.checkbox:checked:after {
+  content: "\2714";
+  font-size: 10px;
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  color: #fff;
+}
+
+#remember {
+  position: relative;
+  font-size: 12px;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  line-height: 6px;
+  margin-top: 25px;
+}
+
+.body-zc {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.body-zc .icon-you {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.body-zc > a {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.foot {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  padding: 32px;
+  color: #999;
+}
+
+.foot > span {
+  margin: 0 6px;
+}

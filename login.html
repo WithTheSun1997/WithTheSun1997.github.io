@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎登陆</title>
+		<link rel="icon" sizes="64x64" href="images/link-volunteer.png" >
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="style/login.css"/>
+		<!-- —————引用的CSS -->
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		
+		<!-- <div class="header">
+			<div class="container">
+				<div class="header-yi">
+					<div class="header-logo">
+						<a href="login.html"><img src="images/LOGO.jpg" >
+						</a>
+					</div>
+					<div class="header-logo1">
+						<a href="login.html">
+							<img src="images/LOGO1.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div id="login-button">
+			<img class="img_icon" src="./images/First_icon.png">
+			</img>
+		  </div>
+		<div class="body">
+			
+			<div class="header">
+				<div class="container">
+					<div class="header-yi">
+						<div class="header-logo">
+							<a href="login.html"><img src="images/logo.png" >
+							</a>
+						</div>
+						<div class="header-logo1">
+							<a href="login.html">
+								<img src="images/LOGO1.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<video class="videoBG " autoplay muted loop>
+				<source src="images/login_video_BG/video_BG.mp4" type="video/mp4" 
+				media="screen and (monochrome:100)"
+				media="print and (resolution:1000dpi)"
+				media="screen and (color:200)"
+				media="tv and (scan:interlace)"
+				media="screen and (min-color-index:26777216)">
+			</video>
+			<div class="body-form">
+				<h1> 账 户 登 录 </h1>
+  				<span id="close-btn">
+    				<img src="./images/Second_close_icon.png"></img>
+  				</span>
+				<!-- <h1 class="body-form-t">账户登录</h1> -->
+				<div class="body-input">
+					<!-- <span class="iconfont icon-yonghu"></span> -->
+					<input type="text" placeholder="请输入用户名或邮箱" id="zhang" class="user">
+				</div>
+				<div class="body-input">
+					<!-- <span class="iconfont icon-lock-fill"></span> -->
+					<input type="password" placeholder="请输入密码" id="mima" class="ward">
+				</div>
+				<div class="log-verify">
+					<input type="text" class="ve-text" placeholder="请输入验证码">
+					<div class="ve-code"></div>
+			   </div>
+				<!-- <div class="body-wj">
+					<a href="#">忘记密码</a>
+				</div> -->
+				<div class="body-btn">
+					<button>登 录</button>
+				</div>
+				<div id="remember-container">
+      				<input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+      				<span id="remember">Remember me</span>
+				</div>
+				<div class="body-zc">
+					<a href="register.html"><span class="iconfont icon-you"></span><span>立即注册</span></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+
+			$(function(){
+				var zcuser;
+				if (sessionStorage.getItem("zcuser") != "") {
+					zcuser = JSON.parse(sessionStorage.getItem("zcuser"));
+				}
+				if(zcuser != null){
+					$('#zhang').val(zcuser.name);
+					$('#mima').val(zcuser.password);
+					sessionStorage.removeItem("zcuser");
+				}
+				$('.body-btn').click(function(){
+					if($('#zhang').val() !='' || $('#mima').val() !='' ){
+						$.ajax({
+							url:'http://localhost:50342/api/Users/dengru',
+							data:{name:$('#zhang').val(),password:$('#mima').val()},
+							type:'get',
+							datatype:'json',
+							success:function(dt){
+								if(dt != false && inputcode.value.toLowerCase() == str.toLowerCase() ){
+									alert('登陆成功！');
+									sessionStorage.setItem("user", JSON.stringify(dt))
+									location.href='index.html';
+								}else if (usenm.value == ''){
+										alert('请输入用户名');
+								}else if(psw.value == ''){
+										alert('请输入您的密码');
+								}else if(inputcode.value == ''){
+										alert('请输入验证码！');
+								}else if(inputcode.value.toLowerCase() != str.toLowerCase()){
+										alert('验证码错误！');
+								}else{
+										alert('登入失败！请检查账号或密码是否填写正确！');
+									     console.log(dt);
+
+									}
+										
+								}
+						})
+					}else{
+						alert('文本框不能为空！');
+					}
+				})
+
+			})
+			
+		</script>
+		<script src="./js/login-Verify.js"></script>
+		<script src="./js/First_login.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'>
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	</body>
+</html>
